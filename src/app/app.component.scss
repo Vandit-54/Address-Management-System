@@ -1,0 +1,134 @@
+$primary-color: #1a1a2e;
+$secondary-color: #16213e;
+$text-color: #fff;
+$gradient-start: #0f3460;
+$gradient-end: #53354a;
+$button-bg: #30475e;
+$button-hover-bg: #1b262c;
+
+.site-header {
+  background: linear-gradient(90deg, $gradient-start, $gradient-end);
+  color: $text-color;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-title {
+      font-size: 2rem;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 1rem;
+
+      .btn {
+        background-color: $button-bg;
+        color: $text-color;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $button-hover-bg;
+        }
+
+        &.register {
+          background-color: lighten($button-bg, 5%);
+          &:hover {
+            background-color: lighten($button-hover-bg, 5%);
+          }
+        }
+
+        &.login {
+          background-color: darken($button-bg, 5%);
+          &:hover {
+            background-color: darken($button-hover-bg, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+$primary-color: #1a1a2e;
+$secondary-color: #16213e;
+$text-color: #fff;
+$gradient-start: #0f3460;
+$gradient-end: #53354a;
+$link-hover-color: #1b9aaa;
+
+.site-footer {
+  background: linear-gradient(90deg, $gradient-start, $gradient-end);
+  color: $text-color;
+  padding: 2rem 2rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .quick-links {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1rem;
+
+      .quick-links-left{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .quick-links-right{
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        margin: 0.5rem 0;
+
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  mat-form-field,
+  mat-radio-group,
+  mat-checkbox {
+    width: 100%;
+  }
+
+  span{
+    color: rgba(255, 227, 227, 0.87);
+  }
+
+  .button1{
+    color: rgba(255, 227, 227, 0.87) !important;
+  }
+
+
