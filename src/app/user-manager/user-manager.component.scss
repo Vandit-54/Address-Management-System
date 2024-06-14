@@ -1,0 +1,27 @@
+
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;  
+    gap: 16px;
+  }
+  
+  mat-form-field,
+  mat-radio-group,
+  mat-checkbox {
+    width: 100%;
+  }
+
+
+  .mat-mdc-raised-button[disabled][disabled] {
+    --mdc-protected-button-disabled-container-color: rgba(64, 104, 150, 0.58);
+  }
+
+  span{
+    color: rgba(255, 227, 227, 0.87);
+  }
+
+  .button1{
+    color: rgba(255, 227, 227, 0.87) !important;
+  }
+

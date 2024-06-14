@@ -66,10 +66,13 @@ $gradient-end: #53354a;
 $link-hover-color: #1b9aaa;
 
 .site-footer {
+
   background: linear-gradient(90deg, $gradient-start, $gradient-end);
   color: $text-color;
   padding: 2rem 2rem;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 6.25rem;
+
 
   .footer-content {
     display: flex;
@@ -109,26 +112,5 @@ $link-hover-color: #1b9aaa;
   }
 }
 
-form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  mat-form-field,
-  mat-radio-group,
-  mat-checkbox {
-    width: 100%;
-  }
-
-  span{
-    color: rgba(255, 227, 227, 0.87);
-  }
-
-  .button1{
-    color: rgba(255, 227, 227, 0.87) !important;
-  }
 
 

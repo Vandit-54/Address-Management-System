@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -7,45 +8,31 @@ import { FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  form!: FormGroup;
+  users: any[] = [];
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
-    this.form = this.fb.group({
-      userFields: this.fb.group({
-        userId: ['', Validators.required],
-        userName: ['', Validators.required],
-        email: ['', [Validators.required, Validators.email]],
-      }),
-      addressFields: this.fb.array([
-        this.createAddressGroup()
-      ])
-    });
+  ngOnInit() {
+    this.fetchUsers();
   }
 
-  createAddressGroup(): FormGroup {
-    return this.fb.group({
-      street: ['', Validators.required],
-      city: ['', Validators.required],
-      state: ['', Validators.required],
-      zipCode: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(10)]]
-    });
+  fetchUsers() {
+    this.http.get<any[]>('http://localhost:3000/users')
+      .subscribe(data => {
+        this.users = data;
+        console.log(this.users);
+      });
   }
 
-  get addressFields(): FormArray {
-    return this.form.get('addressFields') as FormArray;
+  onAddressAdded() {
+    console.log('Address added');
   }
 
-  addAddress(): void {
-    this.addressFields.push(this.createAddressGroup());
+  onAddressRemoved(index: number) {
+    console.log(`Address at index ${index} removed`);
   }
 
-  removeAddress(index: number): void {
-    this.addressFields.removeAt(index);
-  }
-
-  onSubmit(): void {
-    console.log(this.form.value);
+  onFormSubmitted(formValue: any) {
+    console.log('Form submitted', formValue);
   }
 }

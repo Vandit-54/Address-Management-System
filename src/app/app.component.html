@@ -2,69 +2,14 @@
   <div class="header-content">
     <div class="site-title">BDSM</div>
     <div class="auth-buttons">
-      <button class="btn register">About Us</button>
+      <button class="btn register">About You</button>
       <button class="btn login">Contact Us</button>
     </div>
   </div>
 </header>
 
-<div class="container-fluid mt-5">
-  <h2 class="d-flex justify-content-center mb-5">Fill out this form to get in touch with us!</h2>
-  <form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <div formGroupName="userFields">
-      <mat-form-field appearance="fill">
-        <mat-label>User ID</mat-label>
-        <input matInput formControlName="userId">
-      </mat-form-field>
-
-      <mat-form-field appearance="fill">
-        <mat-label>User Name</mat-label>
-        <input matInput formControlName="userName">
-      </mat-form-field>
-
-      <mat-form-field appearance="fill">
-        <mat-label>Email</mat-label>
-        <input matInput type="email" formControlName="email">
-      </mat-form-field>
-    </div>
-
-    <div formArrayName="addressFields" *ngFor="let address of addressFields.controls; let i = index">
-      <div [formGroupName]="i" class="address-group">
-
-        <button mat-icon-button color="warn" (click)="removeAddress(i)" *ngIf="addressFields.length > 1">
-          <mat-icon>remove_circle</mat-icon>
-        </button>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Street</mat-label>
-          <input matInput formControlName="street">
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>City</mat-label>
-          <input matInput formControlName="city">
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>State</mat-label>
-          <input matInput formControlName="state">
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Zip Code</mat-label>
-          <input matInput formControlName="zipCode">
-        </mat-form-field>
-
-
-      </div>
-    </div>
-
-    <button mat-raised-button color="primary" type="button" (click)="addAddress()">Add Address</button>
-
-    <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Submit</button>
-  </form>
-</div>
-
+<app-user-manager [users]="users" (addressAdded)="onAddressAdded()" (addressRemoved)="onAddressRemoved($event)"
+  (formSubmitted)="onFormSubmitted($event)"></app-user-manager>
 
 
 <footer class="site-footer">
@@ -86,7 +31,3 @@
     </div>
   </div>
 </footer>
-
-
-
-<router-outlet></router-outlet>

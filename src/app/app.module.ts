@@ -10,8 +10,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AgGridModule } from 'ag-grid-angular';  // <-- Import AgGridModule
 
 import { AppComponent } from './app.component';
 import { UserManagerComponent } from './user-manager/user-manager.component';
@@ -19,7 +20,7 @@ import { UserManagerComponent } from './user-manager/user-manager.component';
 @NgModule({
   declarations: [
     AppComponent,
-    UserManagerComponent
+    UserManagerComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,8 @@ import { UserManagerComponent } from './user-manager/user-manager.component';
     MatCheckboxModule,
     FormsModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    AgGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]

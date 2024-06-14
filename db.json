@@ -1,0 +1,243 @@
+{"users": [
+    {
+      "userFields": {
+        "fullName": "Vandit Shah",
+        "userName": "vanditshah",
+        "email": "vanditshah@example.com",
+        "phoneNumber": 8200445991
+      },
+      "addressFields": [
+        {
+          "street": "Bopal",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380058
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Anjali Patel",
+        "userName": "anjalipatel",
+        "email": "anjali.patel@example.com",
+        "phoneNumber": 9123456789
+      },
+      "addressFields": [
+        {
+          "street": "Satellite",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380015
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Rohan Mehta",
+        "userName": "rohanmehta",
+        "email": "rohan.mehta@example.com",
+        "phoneNumber": 9988776655
+      },
+      "addressFields": [
+        {
+          "street": "Vastrapur",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380052
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Priya Desai",
+        "userName": "priyadesai",
+        "email": "priya.desai@example.com",
+        "phoneNumber": 9876543210
+      },
+      "addressFields": [
+        {
+          "street": "Navrangpura",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380009
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Arjun Joshi",
+        "userName": "arjunjoshi",
+        "email": "arjun.joshi@example.com",
+        "phoneNumber": 9123456788
+      },
+      "addressFields": [
+        {
+          "street": "Gota",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 382481
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Nisha Shah",
+        "userName": "nishashah",
+        "email": "nisha.shah@example.com",
+        "phoneNumber": 9812345678
+      },
+      "addressFields": [
+        {
+          "street": "Thaltej",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380059
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Karan Patel",
+        "userName": "karanpatel",
+        "email": "karan.patel@example.com",
+        "phoneNumber": 9876512345
+      },
+      "addressFields": [
+        {
+          "street": "Prahlad Nagar",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380015
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Rina Mehta",
+        "userName": "rinamehta",
+        "email": "rina.mehta@example.com",
+        "phoneNumber": 9123412345
+      },
+      "addressFields": [
+        {
+          "street": "Maninagar",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380008
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Vivek Desai",
+        "userName": "vivekdesai",
+        "email": "vivek.desai@example.com",
+        "phoneNumber": 9812312345
+      },
+      "addressFields": [
+        {
+          "street": "Naranpura",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380013
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Sneha Joshi",
+        "userName": "snehajoshi",
+        "email": "sneha.joshi@example.com",
+        "phoneNumber": 9123412312
+      },
+      "addressFields": [
+        {
+          "street": "Paldi",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380007
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Ravi Patel",
+        "userName": "ravipatel",
+        "email": "ravi.patel@example.com",
+        "phoneNumber": 9876512312
+      },
+      "addressFields": [
+        {
+          "street": "Ambawadi",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380006
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Ritu Mehta",
+        "userName": "ritumehta",
+        "email": "ritu.mehta@example.com",
+        "phoneNumber": 9123412323
+      },
+      "addressFields": [
+        {
+          "street": "Chandkheda",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 382424
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Ajay Desai",
+        "userName": "ajaydesai",
+        "email": "ajay.desai@example.com",
+        "phoneNumber": 9812312312
+      },
+      "addressFields": [
+        {
+          "street": "Shahibaug",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380004
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Rashmi Joshi",
+        "userName": "rashmijoshi",
+        "email": "rashmi.joshi@example.com",
+        "phoneNumber": 9123412334
+      },
+      "addressFields": [
+        {
+          "street": "Gulbai Tekra",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380015
+        }
+      ]
+    },
+    {
+      "userFields": {
+        "fullName": "Rahul Patel",
+        "userName": "rahulpatel",
+        "email": "rahul.patel@example.com",
+        "phoneNumber": 9876512334
+      },
+      "addressFields": [
+        {
+          "street": "Memnagar",
+          "city": "Ahemdabad",
+          "state": "Gujarat",
+          "zipCode": 380052
+        }
+      ]
+    }
+]}
+  

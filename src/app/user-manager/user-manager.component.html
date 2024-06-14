@@ -1,1 +1,77 @@
-<p>user-manager works!</p>
+<div class="container-fluid mt-5 mb-5 row">
+    <h2 class="d-flex justify-content-center mb-5">Fill out this form to get in touch with us!</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="row">
+      <div class="col-lg-6" formGroupName="userFields">
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Full Name</mat-label>
+          <input matInput formControlName="fullName">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>User Name</mat-label>
+          <input matInput formControlName="userName">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Phone Number</mat-label>
+          <input matInput type="number" formControlName="phoneNumber">
+        </mat-form-field>
+      </div>
+  
+      <div class="col-lg-6" formArrayName="addressFields" *ngFor="let address of addressFields.controls; let i = index">
+        <div [formGroupName]="i" class="address-group">
+  
+          <button mat-icon-button color="warn" (click)="removeAddress(i)" *ngIf="i !==0 ">
+            <mat-icon>remove_circle</mat-icon>
+          </button>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Street</mat-label>
+            <input matInput formControlName="street">
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>City</mat-label>
+            <input matInput formControlName="city">
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>State</mat-label>
+            <input matInput formControlName="state">
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Zip Code</mat-label>
+            <input matInput type="number" formControlName="zipCode">
+          </mat-form-field>
+        </div>
+      </div>
+  
+    </div>
+  
+      <button mat-raised-button color="primary" type="button" (click)="addAddress()" [disabled]="form.controls['addressFields'].invalid">Add Address</button>
+  
+      <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Submit</button>
+    </form>
+
+    <div class="ag-theme-alpine-dark mt-5" style="height: auto; max-width:100%;">
+      <ag-grid-angular
+        [rowData]="users"
+        [columnDefs]="columnDefs"
+        [pagination]=true
+        [paginationPageSize]=5
+        [paginationPageSizeSelector]=[5,10,15]
+        domLayout="autoHeight">
+      </ag-grid-angular>
+    </div>
+  </div>
+
+
+
